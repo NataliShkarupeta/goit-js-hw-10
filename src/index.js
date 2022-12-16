@@ -45,7 +45,6 @@ function createListOneCountry({ name, capital, population, flags, languages }) {
     let langArr = languages.map((item) => {
       return item.name;
     });
-    // takeLanguages(languages)
 
     return `
         <li class="item"><img class="list-img" src="${flags.svg}" width=40" height="20"><span class="top-text">${name}<span></li> 
@@ -61,13 +60,6 @@ function createListOneCountry({ name, capital, population, flags, languages }) {
     <li class="item"><span class="list-text">Languages:</span>${languages[0].name}</li>
     `;
 }
-
-// function takeLanguages(arr) {
-//   arr.map((item) => {
-//     return item.name;
-//   })
-//   return arr;
-// }
 
 function createListCountries(obj) {
   const newObj = obj.map(({ name, flags }) => {
@@ -85,7 +77,3 @@ function rendorHtml(el) {
   listEl.insertAdjacentHTML("afterbegin", el);
 }
 
-//   return fetch(`https://restcountries.com/v2/name/${name}`).then((response) => {
-//     console.log(response.json())
-//     // return response.json();
-//   });
