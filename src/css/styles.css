@@ -18,3 +18,23 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+.country-list {
+  margin: 0;
+  padding: 0;
+}
+.item{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.list-text{
+  font-weight: 700; 
+}
+.top-text{
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.18;
+}
